@@ -1,5 +1,5 @@
 [
-  { "id": "1", "fact": "octocat/Hello-World", "img-credit": "Nakamura K., Watanabe H., Miyazaki J., et al. (CC BY 2.5)" },
-  { "id": "2", "fact": "github/docs", "img-credit": "" },
-  { "id": "3", "fact": "octo-org/octo-repo", "img-credit": "Uwe Schneehagen (CC BY-SA 4.0)" }
+  { "id": "1", "fact": "octocat/Hello-World", "imgcredit": "Nakamura K., Watanabe H., Miyazaki J., et al. (CC BY 2.5)" },
+  { "id": "2", "fact": "github/docs", "imgcredit": "" },
+  { "id": "3", "fact": "octo-org/octo-repo", "imgcredit": "Uwe Schneehagen (CC BY-SA 4.0)" }
 ]
