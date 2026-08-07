@@ -1,14 +1,28 @@
-body {
-  font-family: sans-serif;
-  margin: 2rem;
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
-}
+    .navbar {
+      width: 100%;
+      margin: 1rem;
+      border-bottom: 2px solid #333;
+      }
+    .container {
+      text-align: center;
+      margin: 2rem;
+      width: 100%
+      h1 { font-family: garamond, serif; }
+      p {font-family: verdana; }
+    }
+    .factdisplay {
+      text-align: center;
+      width: 100%;
+      p {font-family: verdana; font-size: small;}
+    }
+    .info {
+      font-family: verdana;
+      margin: 1rem;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    h1 { font-family: garamond, serif; }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
