@@ -2,10 +2,22 @@
 <html lang="en">
   <head>
   <style>
-    .def {
-      font-family: verdana;
+    .navbar {
+      width: 100%;
+      margin: 1rem;
+      border-bottom: 2px solid #333;
+      }
+    .container {
+      text-align: center;
       margin: 2rem;
+      width: 100%
       h1 { font-family: garamond, serif; }
+      p {font-family: verdana; }
+    }
+    .factdisplay {
+      text-align: center;
+      width: 100%;
+      p {font-family: verdana; font-size: small;}
     }
     .info {
       font-family: verdana;
@@ -24,22 +36,29 @@
   </head>
   <body>
     <!-- Name of Museum. Buttons to about page, and to submit comments/suggestions/corrections -->
-    <section id="header">
+    <section id="nav">
       <div class="navbar">
         <p>Wow name & navigation</p>
       </div>
     </section>
+    
     <!-- Including title, fact, image -->
-    <section id="main" class="def">
+    <section id="header" class="container">
       <h1>The Collection Name</h1>
-      <p>Refresh to get a new fact.</p>
+      <div><p>Refresh to get a new fact.</p></div>
       <ul id="starred"></ul>
-      <!-- Script should randomise and fetch the facts & image info -->
-      <script src="script.js"></script>
     </section>
+      <!-- Script should randomise and fetch the facts & image info -->
+    <section id="fact" class="factdisplay">
+      <script src="script.js"></script>
+      <p>this is a fun fact that is the funnest and factiest and did you know chickens are the coolest thing ever I can't type veruy well today but that's okay.</p>
+      <img src="https://chickenonaraft.com/images/chickenonaraft.png">
+    </section>
+    
     <!-- Disclaimer. Style "info" for the about page -->
     <section id="bottom" class="info">
       <p><strong>WARNING FOR INTERNET USERS:</strong> MANY catchy fun fact websites are misleading or straight up wrong.</p>
       <p>What makes this one different?</p>
+    </section>
   </body>
 </html>
