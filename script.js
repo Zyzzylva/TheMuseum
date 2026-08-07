@@ -1,10 +1,12 @@
 fetch("facts.json")
   .then((response) => response.json())
-  .then((events) => {
+  .then((facts) => {
     const list = document.querySelector("#starred");
-    events.forEach((event) => {
-      const item = document.createElement("li");
-      item.textContent = `${event.fact} — cr ${event.imgcredit}`;
+    facts.forEach((fact) => {
+      const factText = document.createElement("p");
+      factText.textContent = `${fact.fact} — cr ${fact.imgcredit}`;
+      const factImg = document.createElement("img");
+      factImg.setAttribute("imgsrc", fact.imgsrc);
       list.appendChild(item);
     });
   });
