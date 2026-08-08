@@ -2,35 +2,49 @@
 <html lang="en">
   <head>
   <style>
-    .navbar {
-      width: 100%;
-      margin: 1rem;
-      border-bottom: 2px solid #333;
+    body {
+      background-color: floralwhite;
       }
-    .container {
+    .navbar {
+      background-color: #333;
+      font-size: clamp(13px, 2vw, 18px);
+      font-family: verdana;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      p { color: floralwhite; }
+      a { padding:10px; color: floralwhite;}
+      }
+    .header {
       text-align: center;
       margin: 2rem;
       width: 100%
       h1 { font-family: garamond, serif; }
       p {font-family: verdana; 
       font-size: clamp(13px, 2vw, 18px);}
+      padding-bottom: 15px;
     }
     .factdisplay {
       text-align: center;
       max-width: 100%;
-      p {font-family: verdana; font-size: clamp(13px, 2vw, 18px);}
-      img {max-width: 80vw; }
-    }
+      p {font-family: verdana; font-size: clamp(13px, 2vw, 18px); animation: 1s ease fadeIn forwards;}
+      img {max-width: 80vw; animation: 1.5s ease fadeIn forwards;}
+      }
     .info {
-      font-size: clamp(13px, 2.5vw, 18px);
+      font-size: clamp(13px, 2vw, 18px);
       font-family: verdana;
-      margin: 1rem;
+      margin-top: 5vh;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      margin-bottom:7vh;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
-    h1 { font-family: garamond, serif; }
-    ul {
-      list-style: none;
-      padding: 0;
+      h1 { font-family: garamond, serif;}
+    }
+    @keyframes fadeIn {
+      from { opacity:0; }
+      to { opacity: 1; }
     }
   </style>
     <meta charset="utf-8">
@@ -41,26 +55,28 @@
     <!-- Name of Museum. Buttons to about page, and to submit comments/suggestions/corrections -->
     <section id="nav">
       <div class="navbar">
-        <p>Wow name & navigation</p>
+        <p style="padding-left:15px;"><strong>Collection Name</strong></p> 
+        <div style="padding:15px;">
+          <a href="">Info</a>
+          <a href="">Message</a>
+        </div>
       </div>
     </section>
     
-    <!-- Including title, fact, image -->
-    <section id="header" class="container">
+    <div id="header" class="header">
       <h1>The Collection Name</h1>
       <div><p>Refresh to get a new fact.</p></div>
-      <ul id="starred"></ul>
       
-    </section>
+    </div>
     
       <!-- Script should randomise and fetch the facts & image info -->
     <section id="fact" class="factdisplay">
-      <p id="factText"></p>
-      <img id="factImage">
-      <p id="imgCredit" style="font-size:clamp(8px, 1.5vw, 15px);; color:grey;"></p>
+      <p id="factText" style="padding-left:8vw;padding-right:8vw;"></p>
+      <img id="factImage" style="max-height:60vh;">
+      <p id="imgCredit" style="font-size:clamp(8px, 1.5vw, 15px); color:dimgrey;"></p>
       <!-- get list of facts; randomise; fill in txt & img source & creedit -->
       <script>
-      document.getElementById("factText").textContent = "waaaaa";
+      document.getElementById("factText").textContent = "#3: waaaaa fact here i need to make this longer to pad it out a bit and see what the effect is like when there is actual sentences here. Grammar has left the chat unfortunately.";
       document.getElementById("factImage").setAttribute("src","https://inaturalist-open-data.s3.amazonaws.com/photos/171151444/large.jpeg")
       document.getElementById("imgCredit").textContent = "this phto is by sloog :)"; 
       </script>
@@ -69,8 +85,9 @@
     
     <!-- Disclaimer. Style "info" for the about page -->
     <section id="bottom" class="info">
-      <p><strong>WARNING FOR INTERNET USERS:</strong> MANY catchy fun fact websites are misleading or straight up wrong.</p>
-      <p>What makes this one different?</p>
+      <p><strong>WARNING FOR INTERNET USERS:</strong> MANY catchy fun fact websites are misleading or straight up wrong. Don't trust everything you read online.</p>
+      <p>The Collection Curator promises they are a massive nerd and they fact check everything. However, The Curator is not perfect (as much as they try). If you notice an error or issue, please inform The Curator <a href="">here</a>.</p>
+      <p>Enjoy the facts. </p>
     </section>
   </body>
 </html>
