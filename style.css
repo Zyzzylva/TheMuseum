@@ -1,28 +1,44 @@
-
-    .navbar {
-      width: 100%;
-      margin: 1rem;
-      border-bottom: 2px solid #333;
+body {
+      background-color: floralwhite;
       }
-    .container {
+    .navbar {
+      background-color: #333;
+      font-size: clamp(13px, 2vw, 18px);
+      font-family: verdana;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      p { color: floralwhite; }
+      a { padding:10px; color: floralwhite;}
+      }
+    .header {
       text-align: center;
       margin: 2rem;
       width: 100%
       h1 { font-family: garamond, serif; }
-      p {font-family: verdana; }
+      p {font-family: verdana; 
+      font-size: clamp(13px, 2vw, 18px);}
+      padding-bottom: 15px;
     }
     .factdisplay {
       text-align: center;
-      width: 100%;
-      p {font-family: verdana;}
-    }
+      max-width: 100%;
+      p {font-family: verdana; font-size: clamp(13px, 2vw, 18px); animation: 1s ease fadeIn forwards;}
+      img {max-width: 80vw; animation: 1.5s ease fadeIn forwards;}
+      }
     .info {
+      font-size: clamp(13px, 2vw, 18px);
       font-family: verdana;
-      margin: 1rem;
+      margin-top: 5vh;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      margin-bottom:7vh;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
-    h1 { font-family: garamond, serif; }
-    ul {
-      list-style: none;
-      padding: 0;
+      h1 { font-family: garamond, serif;}
+    }
+    @keyframes fadeIn {
+      from { opacity:0; }
+      to { opacity: 1; }
     }
