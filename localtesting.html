@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <style>
+    .navbar {
+      width: 100%;
+      margin: 1rem;
+      border-bottom: 2px solid #333;
+      }
+    .container {
+      text-align: center;
+      margin: 2rem;
+      width: 100%
+      h1 { font-family: garamond, serif; }
+      p {font-family: verdana; 
+      font-size: clamp(13px, 2vw, 18px);}
+    }
+    .factdisplay {
+      text-align: center;
+      max-width: 100%;
+      p {font-family: verdana; font-size: clamp(13px, 2vw, 18px);}
+      img {max-width: 80vw; }
+    }
+    .info {
+      font-size: clamp(13px, 2.5vw, 18px);
+      font-family: verdana;
+      margin: 1rem;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    h1 { font-family: garamond, serif; }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  </style>
     <meta charset="utf-8">
     <title>Name Goes Here</title>
     <link rel="stylesheet" href="style.css">
@@ -27,6 +59,11 @@
       <img id="factImage">
       <p id="imgCredit" style="font-size:clamp(8px, 1.5vw, 15px);; color:grey;"></p>
       <!-- get list of facts; randomise; fill in txt & img source & creedit -->
+      <script>
+      document.getElementById("factText").textContent = "waaaaa";
+      document.getElementById("factImage").setAttribute("src","https://inaturalist-open-data.s3.amazonaws.com/photos/171151444/large.jpeg")
+      document.getElementById("imgCredit").textContent = "this phto is by sloog :)"; 
+      </script>
       
     </section>
     
