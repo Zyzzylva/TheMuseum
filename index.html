@@ -9,31 +9,36 @@
     <!-- Name of Museum. Buttons to about page, and to submit comments/suggestions/corrections -->
     <section id="nav">
       <div class="navbar">
-        <p>Wow name & navigation</p>
+        <p style="padding-left:15px;"><strong>Collection Name</strong></p> 
+        <div style="padding:15px;">
+          <a href="">Info</a>
+          <a href="">Message</a>
+        </div>
       </div>
     </section>
     
-    <!-- Including title, fact, image -->
-    <section id="header" class="container">
+    <div id="header" class="header">
       <h1>The Collection Name</h1>
       <div><p>Refresh to get a new fact.</p></div>
       
-    </section>
+    </div>
     
       <!-- Script should randomise and fetch the facts & image info -->
     <section id="fact" class="factdisplay">
-      <p id="factText"></p>
-      <img id="factImage">
-      <p id="imgCredit" style="font-size:clamp(8px, 1.5vw, 15px);; color:grey;"></p>
-      <script src="script.js"></script>
+      <p id="factText" style="padding-left:8vw;padding-right:8vw;"></p>
+      <img id="factImage" style="max-height:60vh;">
+      <p id="imgCredit" style="font-size:clamp(8px, 1.5vw, 15px); color:dimgrey;"></p>
       <!-- get list of facts; randomise; fill in txt & img source & creedit -->
+      <script src="script.js">
+      </script>
       
     </section>
     
     <!-- Disclaimer. Style "info" for the about page -->
     <section id="bottom" class="info">
-      <p><strong>WARNING FOR INTERNET USERS:</strong> MANY catchy fun fact websites are misleading or straight up wrong.</p>
-      <p>What makes this one different?</p>
+      <p><strong>WARNING FOR INTERNET USERS:</strong> MANY catchy fun fact websites are misleading or straight up wrong. Don't trust everything you read online.</p>
+      <p>The Collection Curator promises they are a massive nerd and they fact check everything. However, The Curator is not perfect (as much as they try). If you notice an error or issue, please inform The Curator <a href="">here</a>.</p>
+      <p>Enjoy the facts. </p>
     </section>
   </body>
 </html>
