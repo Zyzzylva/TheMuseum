@@ -3,7 +3,7 @@ fetch("facts.json")
     .then(facts => {
         const element = facts[Math.floor(Math.random() * facts.length)];
         document.getElementById("factImage").setAttribute("src", element.imgsrc);
-        document.getElementById("factText").textContent = `#${element.id}: ${element.factText}`;
+        document.getElementById("factText").innerHTML = `#${element.id}: ${element.factText}`;
         document.getElementById("imgCredit").textContent = element.imgCredit;
     })
     .catch(error => {
