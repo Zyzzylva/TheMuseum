@@ -5,4 +5,4 @@ fetch("facts.json")
         document.getElementById("imgCredit").textContent = element.imgCredit;
         document.getElementById("factText").innerHTML = `#${element.id}: ${element.factText}`;
         document.getElementById("factImage").setAttribute("src", element.imgsrc);
-    })
+    });
