@@ -1,9 +1,10 @@
-fetch("testing.json")
+fetch("facts.json")
     .then(response => response.json())
-    .then(testing => {
-        const element = testing[Math.floor(Math.random() * testing.length)];
-        document.getElementById("factImage").setAttribute("src", "");
-        document.getElementById("factText").textContent = "i have replaced the text";
+    .then(facts => {
+        const element = facts[Math.floor(Math.random() * facts.length)];
+        document.getElementById("factImage").setAttribute("src", element.imgsrc);
+        document.getElementById("factText").textContent = element.factText;
+        document.getElementById("imgCredit").textContent = element.imgCredit;
     })
     .catch(error => {
         document.getElementById("factText").textContent = "Oh no! Could not fetch the fact :C";
