@@ -2,6 +2,8 @@ body {
       background-color: floralwhite;
       }
     a { padding:10px; color: floralwhite;}
+    .centered {
+          p { text-align:center; }}
     .navbar {
       background-color: #333;
       font-size: clamp(13px, 2vw, 18px);
